@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Estilo de header */
+        header {
+            background-color: #666;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: white;
+        }
+
+        /* Crear 2 columnas con la misma posición en la fila */
+        nav {
+            float: left;
+            width: 30%;
+            height: 300px;
+            /* only for demonstration, should be removed */
+            background: #ccc;
+            padding: 20px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+
+        /* Clear floats after the columns */
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Hola, Pasteleria Arcoiris te la bienvenida</h2>
+    </header>
+
+    <section>
+        <p>Contamos con una amplia variedad de sabores, adornos, tematicas y diseños que <br> encantaran a tus seres queridos. </p>
+
+        <p>Estos son algunos de nuestros pasteles </p>
+    
+
+        <article>
+            <h1>Londres</h1>
+            <p>Londres es la capital de Inglaterra y es la ciudad más popular del Reino Unido, es la ciudad mas poblada con 13 millones de habitantes en su área metropolitana</p>
+            <li><a href="C:\Users\Dante\Documents\Launchx\Mission FrontEnd\Semana 2\imagenes\pastel.jpg">Queso Chocolate</a></li>
+            <li><a href="C:\Users\Dante\Documents\Launchx\Mission FrontEnd\Semana 2\imagenes\paste2.jpg">Tres Leches</a></li>
+            <li><a href="C:\Users\Dante\Documents\Launchx\Mission FrontEnd\Semana 2\imagenes\paste3.jpg">Selva negra</a></li>
+        
+            <!-- Formularios -->
+            <hr>
+            <!-- Tipos de Inputs -->
+            <h2>Realiza tu pedido</h2>
+            <label for="correo1">Nombre</label><br>
+            <input type="text" id="correo1" name="correo1"><br><br>
+            
+            <label for="numero1">Correo</label><br>
+            <input type="number" id="numero1" name="numero1"><br><br>
+            
+            <label for="tel1">Teléfono</label><br>
+            <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+            
+            <label for="pedido">Pedido</label><br>
+            <input type="text" id="correo1" name="correo1"><br><
+            <hr>
+    
+        </article>
+    </section>
+
+
+</body>
+
+</html>
